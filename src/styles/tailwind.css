@@ -1,0 +1,6 @@
+
+@import "tailwindcss";
+@source "../**/*.{html,js,jsx,ts,tsx}";
+/* comment this if it causes build errors */
+@import "tw-animate-css";
+
