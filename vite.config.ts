@@ -24,7 +24,4 @@ export default defineConfig({
 
   // server: { hmr: { overlay: false } },
 })
-  // If the Vite overlay annoys you while debugging, you can enable this:
-  // server: { hmr: { overlay: false } },
-})
 
