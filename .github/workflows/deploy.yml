@@ -34,7 +34,7 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Prepare Pages artifact
+      - name: Prepare Pages artifact (SPA fallback + nojekyll)
         run: |
           cp dist/index.html dist/404.html || true
           touch dist/.nojekyll
@@ -53,3 +53,4 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+
