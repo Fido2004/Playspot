@@ -1,4 +1,5 @@
 
+
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
@@ -10,13 +11,10 @@ const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 
 export default defineConfig({
-  // 👇 IMPORTANT: base must be top-level, not inside plugins
-  base: '/playspot-/',
+  // ✅ MUST match the repo name exactly
+  base: '/Playspot/',
 
-  plugins: [
-    react(),
-    tailwindcss(),
-  ],
+  plugins: [react(), tailwindcss()],
 
   resolve: {
     alias: {
@@ -24,6 +22,8 @@ export default defineConfig({
     },
   },
 
+  // server: { hmr: { overlay: false } },
+})
   // If the Vite overlay annoys you while debugging, you can enable this:
   // server: { hmr: { overlay: false } },
 })
